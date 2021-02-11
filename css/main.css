@@ -1,0 +1,30 @@
+main{
+    margin-top:  var(--offset);
+}
+
+main h2{
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 50px;
+    color: var(--mainText-color)
+}
+
+main ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+main ul h3{
+    margin-top:  var(--offset);
+    color: var(--mainText-color)
+}
+
+main ul h4 {
+    margin-top: var(--offset);
+    color: var(--mainText-color)
+}
+
+
+main ul a{
+    margin-top: var(--offset);
+}

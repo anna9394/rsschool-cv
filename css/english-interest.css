@@ -1,0 +1,34 @@
+.english {
+    display: flex;
+    flex-direction:column ;
+  }
+
+  .english h2{
+    font-weight: 600;
+    font-size: 36px;
+    margin-top:  var(--offset);
+    color: var(--mainText-color)
+  }
+
+  .english p {
+    margin-top: var(--offset);
+  }
+
+.interest {
+  display: flex;
+  flex-direction:column ;
+}
+
+.interest ul {
+    margin-top: var(--offset);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.interest h2{
+  font-weight: 600;
+  font-size: 36px;
+  margin-top:  var(--offset);
+  color: var(--mainText-color)
+}
