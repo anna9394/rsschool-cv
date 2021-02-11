@@ -1,6 +1,14 @@
+:root {
+  --offset: 30px;
+  --asideTitle-color: #c29545;
+  --asideText-color: #f0efea;
+  --mainText-color: #323030;
+  --font: 'Poppins', sans-serif;
+}
+
 body,
 figure,
-figcaption, ul, h1, h2, h3, p, ul, li ,a,button {
+figcaption, ul, h1, h2, h3, h4, p, ul, li ,a,button {
   margin: 0;
   padding: 0;
 }
@@ -10,10 +18,10 @@ figcaption, ul, h1, h2, h3, p, ul, li ,a,button {
 }
 
 body {
-  color: #626676;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  margin-bottom: 50px;
 }
 
 img {
@@ -32,12 +40,12 @@ a {
 
 
 a:hover {
-  color: #009999;
+  color: var(--primary-color);
   text-decoration:underline
 }
 
 a:active {
-  color: #006363;
+  color: #631400;
 }
 
 .visually-hidden{
@@ -45,74 +53,146 @@ a:active {
 }
 
 .wrapper {
+  display: flex;
     margin: 0 auto ;
     max-width: 1024px;
+    min-height: 100vh;
+    border: 1px solid black;
   }
 
-header {
+.wrapper-HeaderMainFutter{
+  display: flex;
+  flex-direction: column;
+  max-width: 740px;
+  width: 100%;
+  padding-left: 70px;
+  color: var(--primary-color);
+  background-color: #cdbea7;
+}
+
+  header {
   position: relative;
-  min-height: 185px;
-  padding: 20px;
-  background: linear-gradient(to bottom, #FF9640, #FF7400);
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-}
+  
+  }
 
-figure {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  header h2::after {
+    position: absolute;
+    content: '';
+    top: 100px;
+    right: 50px;
+    height: 200px;
+    width: 25px;
+    background-color: #882426;
+    border-radius: 15px;
+  }
 
-figcaption{
+  header h2 {
+    padding-top: 120px;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--mainText-color);
+  }
+
+  header h2 span {
+    color: #882426;
+  }
+
+  header h3 {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 15px;
+    color: var(--mainText-color);
+    text-transform: uppercase;
+  }
+
+  main{
+    margin-top:  var(--offset);
+  }
+
+  main h2{
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 50px;
+    color: var(--mainText-color)
+  }
+
+
+  main ul li {
 display: flex;
-align-items: center;
-justify-content: space-around;
-flex-direction:column;
+flex-direction: column;
 }
 
-figcaption .name{
-  font-size: 33px;
-  text-transform: uppercase;
-  font-weight: 400;
-  word-spacing: 10px;
-}
+  main ul h3{
+    margin-top:  var(--offset);
+    color: var(--mainText-color)
+  }
 
-figcaption .specialty {
-  text-transform: uppercase;
-  font-weight: 100;
-  margin-top: 16px;
-}
+  main ul h4 {
+    margin-top: var(--offset);
+    color: var(--mainText-color)
+  }
 
-.logo-img {
-  background-image: url(../img/foto.jpg);
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    padding: 80px;
-    
-}
 
-.contacts {
-  display: flex;
-  align-items: center;
- 
-}
+  main ul a{
+  margin-top: var(--offset);
+  }
 
-.contacts ul{
-  display: flex;
-  justify-content: space-between;
+  aside {
+    display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    max-width: 410px;
+    background-color: #882426;
+    order: -1;
+    padding: 90px 20px;
+  }
+
+.wrapper-aside{
+  padding-left: 70px;
+  padding-right: 60px;
 }
 
-.contacts ul:last-child{
-  margin-right: 0;
-}
+  aside .logo-img {
+    height: 220px;
+    width: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+    border:5px solid #cdbea7;
+    margin: 0 auto;
+    position: relative;
+  }
 
-.contacts ul li{
-  margin-top: 10px;
-}
+  aside .logo-img img{
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
 
+  aside  h2 {
+    margin-top: var(--offset);
+    color: var(--asideTitle-color);
+    font-weight: 600;
+    font-size: 36px;
+  }
 
+  aside p {
+    margin-top: var(--offset);
+    color: var(--asideText-color);
+  }
 
+  aside ul {
+    margin-top: var(#f0efea);
+    color: var(--asideText-color);
+  }
+
+  aside ul li {
+    margin-top: var(--offset);
+  }
+    
+  aside h4 {
+    color: var(--asideTitle-color);
+    margin-bottom: var(--offset);
+  }
