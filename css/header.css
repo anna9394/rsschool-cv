@@ -1,0 +1,45 @@
+header {
+    position: relative;
+}
+
+header h2::after {
+    position: absolute;
+    content: '';
+    top: 100px;
+    right: 5%;
+    height: 180px;
+    width: 20px;
+    background-color: var(--prevailing-color);
+    border-radius: 15px;
+}
+
+header h2 {
+    font-family: var(--font);
+    font-size: 50px;
+    padding: 50px 70px 0;
+}
+
+header h2 span {
+    color: var(--prevailing-color);
+}
+
+header h3 {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding: 0 70px;
+}
+
+header nav {
+    background-color: var(--mainText-color);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    color: var(--asideText-color);
+    width: 100%;
+    padding: 20px;
+}

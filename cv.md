@@ -3,7 +3,7 @@
    - Mobile: +375 (33) 3333333;
    - Email: anna@gmail.com;
 
-3. My first specialty is a doctor, but now I want to start a completely new one called Front-End Developer.
+3. My first speciality is a doctor, but now I want to start a completely new one called Front-End Developer.
    I see IT as the fastest growing and most advanced sector in which all high technologies are concentrated. My strengths: work-focused, well organized, effective and efficient, ready to study something new.
    
  4. Technical skills:

@@ -1,0 +1,142 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  max-width: 410px;
+  background-color: var(--prevailing-color);
+  order: -1;
+  padding: 50px 20px;
+  flex-basis: 40%;
+}
+
+.wrapper-aside {
+  padding-left: 70px;
+  padding-right: 60px;
+}
+
+.wrapperSvg{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: var( --asideBackgroundColor-color);
+  
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.profileIcon {
+  background-image: url(../img/profile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactIcon {
+  background-image: url(../img/contact.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mailIkon {
+  background-image: url(../img/mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skypeIkon {
+  background-image: url(../img/skype.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gitHub {
+  background-image: url(../img/gitHub.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.books {
+  background-image: url(../img/books.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapperSvg svg {
+  max-width: 100%;
+  min-height:100%;
+  fill: white;
+  padding:10px;
+ z-index: 1;
+}
+
+aside .logo-img {
+  height: 220px;
+  width: 220px;
+  overflow: hidden;
+  border-radius: 50%;
+  border:5px solid #cdbea7;
+  margin: 0 auto;
+  position: relative;
+}
+
+aside .logo-img img{
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+aside .aboutMe {
+  margin-top: var(--offset);
+}
+
+aside h2 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+aside time{
+  color:  var(--mainText-color);
+  font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+aside p {
+  margin-top: var(--offset);
+  color: var(--asideText-color);
+}
+
+aside ul {
+  margin-top: var(#f0efea);
+  color: var(--asideText-color);
+}
+
+  .contact {
+  position:relative;
+}
+
+.contact::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 130px;
+  background-color: var(--asideBackgroundColor-color);
+  border-radius: 5px;
+  top: 17px;
+  left: 0%;
+  z-index: 0;
+}
+
+aside li a{
+  display: flex;
+  align-items: center;
+}
+
+
+footer{
+  flex-grow: 1;
+  background-color: var(  --mainText-color);
+  color: var(--asideText-color); 
+  text-align: center;
+}

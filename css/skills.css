@@ -1,0 +1,98 @@
+.skills {
+    padding-left: 70px;
+    padding-right:30px;
+}
+
+.skills h2{
+    margin-top: 40px;
+  }
+
+  .skills ul li{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skills .progress{
+    width: 250px;
+    height: 10px;
+    background-color:#323030;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .skills .progress::after,
+  .skills .progress::before{
+    position: absolute;
+    content: '';
+    background-color:#882426;
+  }
+
+  .skills .progress::after{
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--dimensionsCircle);
+    height: var(--dimensionsCircle);
+    border-radius: 50%
+  }
+
+  .skills .progress::before{
+    height: 10px;
+    border-radius: 10px;
+    left:0;
+  }
+
+  .skills .progress:hover::after,
+  .skills .progress:hover::before {
+    background-color:#c29545;
+    cursor: pointer;
+  }
+
+  .skills li:first-child .progress::after{
+    left: calc(90% - (var(--dimensionsCircle)/2));
+  }
+  
+  .skills  li:first-child .progress::before{
+    width: 90%;
+  }
+  
+  .skills li:nth-child(2) .progress::after {
+    left: calc(90% - (var(--dimensionsCircle)/2));
+  }
+  
+  .skills li:nth-child(2) .progress::before{
+    width: 90%;
+  }
+
+  .skills li:nth-child(3) .progress::after {
+    left: calc(55% - (var(--dimensionsCircle)/2));
+  }
+  
+  .skills li:nth-child(3) .progress::before{
+    width: 55%;
+  }
+
+  .skills li:nth-child(4) .progress::after {
+    left: calc(65% - (var(--dimensionsCircle)/2));
+  }
+  
+  .skills li:nth-child(4) .progress::before{
+    width: 65%;
+  }
+
+  .skills li:nth-child(5) .progress::after {
+    left: calc(55% - (var(--dimensionsCircle)/2));
+  }
+  
+  .skills li:nth-child(5) .progress::before{
+    width: 55%;
+  }
+
+  .skills li:last-child .progress::after{
+    left: calc(60% - (var(--dimensionsCircle)/2));
+  }
+  
+  .skills  li:last-child .progress::before{
+    width: 60%;
+  }
