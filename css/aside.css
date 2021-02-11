@@ -8,7 +8,7 @@ aside {
   flex-basis: 40%;
 }
 
-.wrapper-aside{
+.wrapper-aside {
   padding-left: 70px;
   padding-right: 60px;
 }
@@ -18,11 +18,48 @@ aside {
   height: 40px;
   margin-right: 10px;
   background-color: var( --asideBackgroundColor-color);
+  
   border-radius: 50%;
   z-index: 1;
 }
 
-.wrapper-aside svg {
+.profileIcon {
+  background-image: url(../img/profile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactIcon {
+  background-image: url(../img/contact.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mailIkon {
+  background-image: url(../img/mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skypeIkon {
+  background-image: url(../img/skype.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gitHub {
+  background-image: url(../img/gitHub.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.books {
+  background-image: url(../img/books.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapperSvg svg {
   max-width: 100%;
   min-height:100%;
   fill: white;
