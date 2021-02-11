@@ -12,9 +12,7 @@ figcaption, ul, h1, h2, h3, h4, p, ul, li ,a,button, nav {
   --asideText-color: #f0efea;
   --mainText-color: #323030;
   --font: 'Poppins', sans-serif;
-  --sizePrevailing-h2: 36px;
   --dimensionsCircle: 25px;
-  --size-h2: 50px;
 }
 
 * {
