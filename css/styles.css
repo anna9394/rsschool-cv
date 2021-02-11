@@ -52,12 +52,12 @@ a {
 
 
 a:hover {
-  color: var(--primary-color);
-  text-decoration:underline
+  color: #b87501;
+  text-decoration:underline;
 }
 
 a:active {
-  color: #631400;
+  color: #e65c00;
 }
 
 .visually-hidden{
