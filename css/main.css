@@ -1,12 +1,10 @@
 main{
-    margin-top:  var(--offset);
+    padding: 0 70px;
 }
 
 main h2{
-    font-weight: 600;
     font-size: 36px;
     margin-top: 50px;
-    color: var(--mainText-color)
 }
 
 main ul li {
@@ -16,15 +14,16 @@ main ul li {
 
 main ul h3{
     margin-top:  var(--offset);
-    color: var(--mainText-color)
+    padding-bottom: 5px;
 }
 
 main ul h4 {
     margin-top: var(--offset);
-    color: var(--mainText-color)
+    color: var(--mainText-color);
 }
 
 
 main ul a{
-    margin-top: var(--offset);
+    margin-top: 10px;
+    padding-left: 20px;
 }

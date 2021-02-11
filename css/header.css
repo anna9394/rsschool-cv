@@ -6,23 +6,21 @@ header h2::after {
     position: absolute;
     content: '';
     top: 100px;
-    right: 0;
-    height: 200px;
-    width: 25px;
-    background-color: #882426;
+    right: 5%;
+    height: 180px;
+    width: 20px;
+    background-color: var(--prevailing-color);
     border-radius: 15px;
 }
 
 header h2 {
-    padding-top: 120px;
     font-family: var(--font);
-    font-weight: 600;
     font-size: 50px;
-    color: var(--mainText-color);
+    padding: 50px 70px 0;
 }
 
 header h2 span {
-    color: #882426;
+    color: var(--prevailing-color);
 }
 
 header h3 {
@@ -30,6 +28,18 @@ header h3 {
     font-weight: 400;
     font-size: 30px;
     margin-top: 15px;
-    color: var(--mainText-color);
     text-transform: uppercase;
+    padding: 0 70px;
+}
+
+header nav {
+    background-color: var(--mainText-color);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    color: var(--asideText-color);
+    width: 100%;
+    padding: 20px;
 }

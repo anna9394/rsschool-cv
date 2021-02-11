@@ -1,12 +1,14 @@
+.skills {
+    padding-left: 70px;
+    padding-right:30px;
+}
+
 .skills h2{
-    font-weight: 600;
-    font-size: 36px;
-    margin-top:  var(--offset);
-    color: var(--mainText-color)
+    margin-top: 40px;
   }
 
   .skills ul li{
-    margin-top: var(--offset);
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,10 +22,14 @@
     position: relative;
   }
 
-  .skills .progress::after{
+  .skills .progress::after,
+  .skills .progress::before{
     position: absolute;
     content: '';
     background-color:#882426;
+  }
+
+  .skills .progress::after{
     top: 50%;
     transform: translateY(-50%);
     width: var(--dimensionsCircle);
@@ -32,10 +38,7 @@
   }
 
   .skills .progress::before{
-    position: absolute;
-    content: '';
     height: 10px;
-    background-color:#882426;
     border-radius: 10px;
     left:0;
   }

@@ -1,13 +1,12 @@
 .english {
     display: flex;
     flex-direction:column ;
+    padding-left: 70px;
+    padding-right:30px;
   }
 
   .english h2{
-    font-weight: 600;
-    font-size: 36px;
-    margin-top:  var(--offset);
-    color: var(--mainText-color)
+    margin-top:  40px;
   }
 
   .english p {
@@ -17,6 +16,9 @@
 .interest {
   display: flex;
   flex-direction:column ;
+  padding-left: 70px;
+  padding-right:30px;
+  padding-bottom: 25px;
 }
 
 .interest ul {
@@ -27,8 +29,6 @@
   }
 
 .interest h2{
-  font-weight: 600;
-  font-size: 36px;
-  margin-top:  var(--offset);
+  margin-top: 40px;
   color: var(--mainText-color)
 }
