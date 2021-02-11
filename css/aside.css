@@ -95,10 +95,11 @@ aside h2 {
   align-items: center;
 }
 
-aside h4{
+aside time{
   color:  var(--mainText-color);
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 aside p {

@@ -12,7 +12,7 @@ main ul li {
     flex-direction: column;
 }
 
-main ul h3{
+.titleExperience{
     margin-top:  var(--offset);
     padding-bottom: 5px;
 }
@@ -26,4 +26,5 @@ main ul h4 {
 main ul a{
     margin-top: 10px;
     padding-left: 20px;
+    align-self: flex-start;
 }
