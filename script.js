@@ -30,3 +30,32 @@ scrollUp.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+const switchButton = document.querySelector('.switch input[type="checkbox"]')
+
+const THEME = 'theme'
+const LIGHT = 'light'
+const DARK = 'dark'
+
+window.addEventListener('load', () => {
+  const theme = localStorage.getItem(THEME)
+
+  if (theme === DARK) {
+    document.documentElement.className = 'dark-theme'
+    switchButton.checked = true
+  } else {
+    document.documentElement.className = 'light-theme'
+  }
+  
+})
+
+switchButton.addEventListener('change', () => {
+  if (switchButton.checked) {
+    document.documentElement.className = 'dark-theme'
+    localStorage.setItem(THEME, DARK)
+  } else {
+    document.documentElement.className = 'light-theme'
+    localStorage.setItem(THEME, LIGHT)
+  }
+
+})

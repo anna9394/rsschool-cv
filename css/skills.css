@@ -17,7 +17,7 @@
   .skills .progress{
     width: 250px;
     height: 10px;
-    background-color:#323030;
+    background-color:var(--mainText-color);
     border-radius: 10px;
     position: relative;
   }
@@ -26,7 +26,7 @@
   .skills .progress::before{
     position: absolute;
     content: '';
-    background-color:#882426;
+    background-color:var(--prevailing-color);
   }
 
   .skills .progress::after{
@@ -45,7 +45,7 @@
 
   .skills .progress:hover::after,
   .skills .progress:hover::before {
-    background-color:#c29545;
+    background-color:var(--asideBackgroundColor-color);
     cursor: pointer;
   }
 

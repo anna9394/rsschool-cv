@@ -5,12 +5,22 @@ figcaption, ul, h1, h2, h3, h4, p, ul, li ,a,button, nav {
   padding: 0;
 }
 
-:root {
+.light-theme {
   --offset: 20px;
   --prevailing-color: #882426;
   --asideBackgroundColor-color: #c29545;
   --asideText-color: #f0efea;
   --mainText-color: #323030;
+  --font: 'Poppins', sans-serif;
+  --dimensionsCircle: 25px;
+}
+
+.dark-theme {
+  --offset: 20px;
+  --prevailing-color: #363237;
+  --asideBackgroundColor-color: #d09683;
+  --asideText-color: #f0efea;
+  --mainText-color: #73605b;
   --font: 'Poppins', sans-serif;
   --dimensionsCircle: 25px;
 }
@@ -117,7 +127,7 @@ a:active {
 }
 
 .scroll-up:hover{
-  color: orange;
+  color: var( --asideBackgroundColor-color);
 }
 
 .scroll-up--active{
@@ -129,7 +139,7 @@ a:active {
 .scroll-upSvgPath{
   box-sizing: border-box;
   fill: none;
-  stroke: orange;
+  stroke: var( --asideBackgroundColor-color);
   stroke-width: 4px;
   transition: .2s;
 }
