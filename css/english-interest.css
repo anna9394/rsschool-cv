@@ -1,0 +1,34 @@
+.english {
+    display: flex;
+    flex-direction:column ;
+    padding-left: 70px;
+    padding-right:30px;
+  }
+
+  .english h2{
+    margin-top:  40px;
+  }
+
+  .english p {
+    margin-top: var(--offset);
+  }
+
+.interest {
+  display: flex;
+  flex-direction:column ;
+  padding-left: 70px;
+  padding-right:30px;
+  padding-bottom: 25px;
+}
+
+.interest ul {
+    margin-top: var(--offset);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.interest h2{
+  margin-top: 40px;
+  color: var(--mainText-color)
+}

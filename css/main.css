@@ -1,0 +1,30 @@
+main{
+    padding: 0 70px;
+}
+
+main h2{
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+main ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleExperience{
+    margin-top:  var(--offset);
+    padding-bottom: 5px;
+}
+
+main ul h4 {
+    margin-top: var(--offset);
+    color: var(--mainText-color);
+}
+
+
+main ul a{
+    margin-top: 10px;
+    padding-left: 20px;
+    align-self: flex-start;
+}

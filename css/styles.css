@@ -1,0 +1,147 @@
+body,
+figure,
+figcaption, ul, h1, h2, h3, h4, p, ul, li ,a,button, nav {
+  margin: 0;
+  padding: 0;
+}
+
+.light-theme {
+  --offset: 20px;
+  --prevailing-color: #882426;
+  --asideBackgroundColor-color: #c29545;
+  --asideText-color: #f0efea;
+  --mainText-color: #323030;
+  --font: 'Poppins', sans-serif;
+  --dimensionsCircle: 25px;
+}
+
+.dark-theme {
+  --offset: 20px;
+  --prevailing-color: #363237;
+  --asideBackgroundColor-color: #d09683;
+  --asideText-color: #f0efea;
+  --mainText-color: #73605b;
+  --font: 'Poppins', sans-serif;
+  --dimensionsCircle: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+h2{
+  font-weight: 600;
+  color: var(--mainText-color);
+  font-size: 36px;
+}
+
+h3{
+  color: var(--mainText-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a:hover {
+  color: #b87501;
+  text-decoration:underline;
+}
+
+a:active {
+  color: #e65c00;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+.wrapper {
+     margin: 0 auto ;
+    max-width: 1024px;
+  }
+
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.mainSection{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 60%;
+  max-width: 740px;
+  width: 100%;
+  color: var(--primary-color);
+  background-color: #cdbea7;
+}
+
+
+.scroll-up{
+  position: fixed;
+  right: 27%;
+  bottom: 3%;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  color: #dcddcd;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px #dcddcd;
+  opacity: 0;
+  transition: .2s;
+  transform: translateY(25px);
+}
+
+.scroll-up::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  content: '↑';
+}
+
+.scroll-up:hover{
+  color: var( --asideBackgroundColor-color);
+}
+
+.scroll-up--active{
+  visibility: visible;
+  opacity:1;
+  transform: translateY(0);
+}
+
+.scroll-upSvgPath{
+  box-sizing: border-box;
+  fill: none;
+  stroke: var( --asideBackgroundColor-color);
+  stroke-width: 4px;
+  transition: .2s;
+}
+
+ 
