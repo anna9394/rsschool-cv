@@ -39,4 +39,4 @@
 
    - Marathon from HTML-academy (09.2020-10.2020);
 
-7. English level: _Pre-Intermediate_;
+7. English level: _Elementary_;
